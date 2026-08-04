@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Lens Studio">
+  <circle cx="12" cy="12" r="10" fill="#FFFC00"/>
+  <circle cx="12" cy="12" r="5.5" fill="none" stroke="#111" stroke-width="1.8"/>
+  <circle cx="12" cy="12" r="2" fill="#111"/>
+</svg>

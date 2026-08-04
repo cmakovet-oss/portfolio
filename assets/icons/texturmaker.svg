@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="TexturMaker">
+  <rect width="24" height="24" rx="4" fill="#2d3436"/>
+  <rect x="4" y="4" width="7" height="7" rx="1" fill="#6c5ce7"/>
+  <rect x="13" y="4" width="7" height="7" rx="1" fill="#a29bfe"/>
+  <rect x="4" y="13" width="7" height="7" rx="1" fill="#00cec9"/>
+  <rect x="13" y="13" width="7" height="7" rx="1" fill="#55efc4"/>
+</svg>

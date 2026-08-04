@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Serhii Makovetskyi — VFX Artist, Motion Designer, Interactive Designer. Portfolio and showreel.">
+  <title>Serhii Makovetskyi | VFX & Interactive Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">SM</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#brands" class="nav__link">Brands</a></li>
+        <li><a href="#demo" class="nav__link">Demo</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#showreel" class="nav__link">Showreel</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__content container">
+        <p class="hero__eyebrow reveal">Portfolio</p>
+        <h1 class="hero__title reveal">Serhii Makovetskyi</h1>
+        <p class="hero__subtitle reveal">VFX Artist, Motion Designer, Interactive Designer</p>
+        <div class="hero__actions reveal">
+          <a href="#showreel" class="btn btn--primary">Watch Showreel</a>
+          <a href="#projects" class="btn btn--ghost">View Projects</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">About Me</span>
+          <h2 class="section__title">Crafting Visual Stories</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__image reveal">
+            <img src="assets/images/about-portrait.png" alt="Serhii Makovetskyi">
+          </div>
+          <div class="about__text reveal">
+            <!-- REPLACE: Update this bio with your own story, experience, and focus areas -->
+            <p>
+              I'm a VFX artist and interactive designer with a passion for pushing the boundaries
+              of visual storytelling. From cinematic particle effects to real-time interactive
+              experiences, I blend technical precision with artistic vision.
+            </p>
+            <p>
+              With experience across film, advertising, and game development, I specialize in
+              creating immersive visuals that captivate audiences and elevate brands.
+            </p>
+            <ul class="about__highlights">
+              <li>10+ years in VFX & motion design</li>
+              <li>Real-time & pre-rendered pipelines</li>
+              <li>Interactive & immersive experiences</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Worked With Brands -->
+    <section class="section section--alt" id="brands">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Clients</span>
+          <h2 class="section__title">Worked With Brands</h2>
+          <p class="brands__intro">
+            Collaborations with leading global brands across automotive, entertainment, fashion, and FMCG — and many more.
+          </p>
+        </div>
+        <!-- REPLACE: Swap logo files in assets/brands/ with official brand assets if needed -->
+        <div class="brands__marquee reveal" aria-label="Brand logos">
+          <div class="brands__track">
+            <div class="brand-logo"><img src="assets/brands/hyundai.svg" alt="Hyundai" width="120" height="40"></div>
+            <div class="brand-logo"><img src="assets/brands/disney.svg" alt="Disney" width="120" height="40"></div>
+            <div class="brand-logo"><img src="assets/brands/marvel.svg" alt="Marvel" width="120" height="40"></div>
+            <div class="brand-logo"><img src="assets/brands/mcdonalds.svg" alt="McDonald's" width="120" height="40"></div>
+            <div class="brand-logo"><img src="assets/brands/louis-vuitton.svg" alt="Louis Vuitton" width="120" height="40"></div>
+            <div class="brand-logo"><img src="assets/brands/nike.svg" alt="Nike" width="120" height="40"></div>
+            <div class="brand-logo"><img src="assets/brands/apple.svg" alt="Apple" width="120" height="40"></div>
+            <div class="brand-logo"><img src="assets/brands/bmw.svg" alt="BMW" width="120" height="40"></div>
+            <div class="brand-logo"><img src="assets/brands/mercedes-benz.svg" alt="Mercedes-Benz" width="120" height="40"></div>
+            <div class="brand-logo"><img src="assets/brands/coca-cola.svg" alt="Coca-Cola" width="120" height="40"></div>
+            <div class="brand-logo"><img src="assets/brands/netflix.svg" alt="Netflix" width="120" height="40"></div>
+            <div class="brand-logo"><img src="assets/brands/samsung.svg" alt="Samsung" width="120" height="40"></div>
+            <div class="brand-logo"><img src="assets/brands/google.svg" alt="Google" width="120" height="40"></div>
+            <div class="brand-logo"><img src="assets/brands/adidas.svg" alt="Adidas" width="120" height="40"></div>
+            <!-- duplicate set for seamless loop -->
+            <div class="brand-logo"><img src="assets/brands/hyundai.svg" alt="" width="120" height="40" aria-hidden="true"></div>
+            <div class="brand-logo"><img src="assets/brands/disney.svg" alt="" width="120" height="40" aria-hidden="true"></div>
+            <div class="brand-logo"><img src="assets/brands/marvel.svg" alt="" width="120" height="40" aria-hidden="true"></div>
+            <div class="brand-logo"><img src="assets/brands/mcdonalds.svg" alt="" width="120" height="40" aria-hidden="true"></div>
+            <div class="brand-logo"><img src="assets/brands/louis-vuitton.svg" alt="" width="120" height="40" aria-hidden="true"></div>
+            <div class="brand-logo"><img src="assets/brands/nike.svg" alt="" width="120" height="40" aria-hidden="true"></div>
+            <div class="brand-logo"><img src="assets/brands/apple.svg" alt="" width="120" height="40" aria-hidden="true"></div>
+            <div class="brand-logo"><img src="assets/brands/bmw.svg" alt="" width="120" height="40" aria-hidden="true"></div>
+            <div class="brand-logo"><img src="assets/brands/mercedes-benz.svg" alt="" width="120" height="40" aria-hidden="true"></div>
+            <div class="brand-logo"><img src="assets/brands/coca-cola.svg" alt="" width="120" height="40" aria-hidden="true"></div>
+            <div class="brand-logo"><img src="assets/brands/netflix.svg" alt="" width="120" height="40" aria-hidden="true"></div>
+            <div class="brand-logo"><img src="assets/brands/samsung.svg" alt="" width="120" height="40" aria-hidden="true"></div>
+            <div class="brand-logo"><img src="assets/brands/google.svg" alt="" width="120" height="40" aria-hidden="true"></div>
+            <div class="brand-logo"><img src="assets/brands/adidas.svg" alt="" width="120" height="40" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unity WebGL Demo -->
+    <section class="section" id="demo">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Interactive Demo</span>
+          <h2 class="section__title">DEMO Game</h2>
+        </div>
+        <div class="demo reveal">
+          <p class="demo__desc">
+            Play an interactive real-time experience built with Unity and exported for the web.
+          </p>
+          <div class="demo__frame-wrapper demo__frame-wrapper--unity">
+            <iframe
+              class="demo__frame"
+              src="game/index.html"
+              title="DEMO Game — Unity WebGL"
+              loading="lazy"
+              allow="autoplay; fullscreen"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Skills</span>
+          <h2 class="section__title">Tools & Expertise</h2>
+        </div>
+        <div class="skills__grid">
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/after-effects.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">After Effects</h3>
+            <p class="skill-card__desc">Motion graphics, compositing & animation</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/unity.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">Unity</h3>
+            <p class="skill-card__desc">Real-time 3D, interactivity & WebGL</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/blender.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">Blender</h3>
+            <p class="skill-card__desc">3D modeling, animation & rendering</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/photoshop.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">Photoshop</h3>
+            <p class="skill-card__desc">Retouching, matte painting & textures</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/illustrator.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">Illustrator</h3>
+            <p class="skill-card__desc">Vector graphics & design assets</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/texturmaker.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">TexturMaker</h3>
+            <p class="skill-card__desc">Procedural textures & materials</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/houdini.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">Houdini</h3>
+            <p class="skill-card__desc">Procedural VFX & simulations</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/texture-packer.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">Texture Packer</h3>
+            <p class="skill-card__desc">Sprite sheets & texture atlases</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/magic-particles.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">Magic Particles</h3>
+            <p class="skill-card__desc">Real-time particle effects</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/lens-studio.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">Lens Studio</h3>
+            <p class="skill-card__desc">AR filters & Snapchat lenses</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/csharp.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">C#</h3>
+            <p class="skill-card__desc">Unity scripting & tooling</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/javascript.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">JavaScript</h3>
+            <p class="skill-card__desc">Web interactivity & automation</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/python.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">Python</h3>
+            <p class="skill-card__desc">Pipeline scripts & tooling</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/cursor.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">Cursor</h3>
+            <p class="skill-card__desc">AI-assisted coding & development</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card__icon">
+              <img src="assets/icons/comfyui.svg" alt="" width="32" height="32">
+            </div>
+            <h3 class="skill-card__title">ComfyUI</h3>
+            <p class="skill-card__desc">Node-based AI workflows & generative pipelines</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Projects</span>
+          <h2 class="section__title">Selected Work</h2>
+        </div>
+        <div class="projects__list">
+
+          <!--
+            REPLACE: Duplicate .project-item for each project.
+            - Update title, tags, description, link
+            - Add/remove .project-carousel__slide blocks (image or video)
+            - Add class project-item--reverse on every other item for alternating layout
+            - Put media in assets/images/projects/ and assets/videos/projects/
+          -->
+          <article class="project-item reveal">
+            <div class="project-item__info">
+              <div class="project-item__tags">
+                <span class="tag">Unity</span>
+                <span class="tag">Photoshop</span>
+                <span class="tag">After Effects</span>
+                <span class="tag">Procreate</span>
+              </div>
+              <h3 class="project-item__title">Unity Real-Time VFX</h3>
+              <p class="project-item__desc">
+                A visual effect example built in the Unity engine, combining classical VFX creation
+                techniques with Shader Graph for flexible, real-time results — from texture authoring
+                in Photoshop and Procreate to polish and compositing in After Effects.
+              </p>
+            </div>
+            <div class="project-carousel" data-carousel>
+              <div class="project-carousel__viewport">
+                <div class="project-carousel__track">
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-01-unity-vfx.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous slide">‹</button>
+              <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next slide">›</button>
+              <div class="project-carousel__dots" role="tablist" aria-label="Project slides"></div>
+            </div>
+          </article>
+
+          <article class="project-item project-item--reverse reveal">
+            <div class="project-item__info">
+              <div class="project-item__tags">
+                <span class="tag">Unity</span>
+                <span class="tag">After Effects</span>
+                <span class="tag">Texture Packer</span>
+                <span class="tag">Photoshop</span>
+                <span class="tag">Blender</span>
+              </div>
+              <h3 class="project-item__title">Sci-Fi Healing VFX</h3>
+              <p class="project-item__desc">
+                A sci-fi healing visual effect for a game — animated info sprites created in After Effects,
+                a radar scan animation, and a procedural grid built with Shader Graph, integrated in Unity
+                with supporting assets from Blender, Photoshop, and Texture Packer.
+              </p>
+            </div>
+            <div class="project-carousel" data-carousel>
+              <div class="project-carousel__viewport">
+                <div class="project-carousel__track">
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-02-healing-vfx.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous slide">‹</button>
+              <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next slide">›</button>
+              <div class="project-carousel__dots" role="tablist" aria-label="Project slides"></div>
+            </div>
+          </article>
+
+          <article class="project-item reveal">
+            <div class="project-item__info">
+              <div class="project-item__tags">
+                <span class="tag">Lens Studio</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="project-item__title">Fantastic Four — Snapchat Fire Lens</h3>
+              <p class="project-item__desc">
+                Real-time fire VFX for a promotional Snapchat lens tied to Marvel Studios'
+                Fantastic Four — procedural fire animation built in Lens Studio and driven by
+                JavaScript for interactive, in-app performance.
+              </p>
+            </div>
+            <div class="project-carousel" data-carousel>
+              <div class="project-carousel__viewport">
+                <div class="project-carousel__track">
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-03-fire03.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-03-prew-01.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous slide">‹</button>
+              <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next slide">›</button>
+              <div class="project-carousel__dots" role="tablist" aria-label="Project slides"></div>
+            </div>
+          </article>
+
+          <article class="project-item project-item--reverse reveal">
+            <div class="project-item__info">
+              <div class="project-item__tags">
+                <span class="tag">Lens Studio</span>
+                <span class="tag">Blender</span>
+                <span class="tag">Photoshop</span>
+                <span class="tag">Texture Packer</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="project-item__title">Bitmoji Soccer Buster — Snapchat Game</h3>
+              <p class="project-item__desc">
+                A Snapchat mini-game experience tied to a major U.S. soccer championship — built in
+                Lens Studio with 3D assets from Blender, textures prepared in Photoshop and Texture
+                Packer, and interactive gameplay driven by JavaScript.
+              </p>
+            </div>
+            <div class="project-carousel" data-carousel>
+              <div class="project-carousel__viewport">
+                <div class="project-carousel__track">
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-04-soccer-buster.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-04-bonus-box-v03.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-04-bonus-box-v04.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-04-main.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous slide">‹</button>
+              <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next slide">›</button>
+              <div class="project-carousel__dots" role="tablist" aria-label="Project slides"></div>
+            </div>
+          </article>
+
+          <article class="project-item reveal">
+            <div class="project-item__info">
+              <div class="project-item__tags">
+                <span class="tag">Unity</span>
+                <span class="tag">Blender</span>
+              </div>
+              <h3 class="project-item__title">Fire Vortex VFX</h3>
+              <p class="project-item__desc">
+                A preview of a fire vortex effect for a Unity-based game — animated in Shader Graph
+                with supporting 3D assets prepared in Blender for real-time in-engine playback.
+              </p>
+            </div>
+            <div class="project-carousel" data-carousel>
+              <div class="project-carousel__viewport">
+                <div class="project-carousel__track">
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-05-fire-vortex.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous slide">‹</button>
+              <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next slide">›</button>
+              <div class="project-carousel__dots" role="tablist" aria-label="Project slides"></div>
+            </div>
+          </article>
+
+          <article class="project-item project-item--reverse reveal">
+            <div class="project-item__info">
+              <div class="project-item__tags">
+                <span class="tag">Lens Studio</span>
+                <span class="tag">Photoshop</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="project-item__title">Snapchat Shooter Game</h3>
+              <p class="project-item__desc">
+                A Snapchat game fully designed and built by me as part of internal JavaScript
+                training — from pixel-art visuals created in Photoshop to gameplay logic and
+                interaction systems developed in Lens Studio.
+              </p>
+            </div>
+            <div class="project-carousel" data-carousel>
+              <div class="project-carousel__viewport">
+                <div class="project-carousel__track">
+                  <div class="project-carousel__slide">
+                    <img class="media-autoplay-gif" data-autoplay-gif src="assets/images/projects/project-06-game-01.gif" alt="Snapchat game — start screen">
+                  </div>
+                  <div class="project-carousel__slide">
+                    <img class="media-autoplay-gif" data-autoplay-gif src="assets/images/projects/project-06-game-02.gif" alt="Snapchat game — gameplay">
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous slide">‹</button>
+              <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next slide">›</button>
+              <div class="project-carousel__dots" role="tablist" aria-label="Project slides"></div>
+            </div>
+          </article>
+
+          <article class="project-item reveal">
+            <div class="project-item__info">
+              <div class="project-item__tags">
+                <span class="tag">Unity</span>
+                <span class="tag">Blender</span>
+                <span class="tag">Photoshop</span>
+                <span class="tag">Texture Packer</span>
+                <span class="tag">Procreate</span>
+              </div>
+              <h3 class="project-item__title">Unity Explosion VFX</h3>
+              <p class="project-item__desc">
+                An explosion effect example for Unity games — smoke built from a mesh shape created
+                in Blender, with procedural animation driven by a particle system through Shader Graph,
+                and supporting textures prepared in Photoshop, Texture Packer, and Procreate.
+              </p>
+            </div>
+            <div class="project-carousel" data-carousel>
+              <div class="project-carousel__viewport">
+                <div class="project-carousel__track">
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-07-explosion-vfx.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous slide">‹</button>
+              <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next slide">›</button>
+              <div class="project-carousel__dots" role="tablist" aria-label="Project slides"></div>
+            </div>
+          </article>
+
+          <article class="project-item project-item--reverse reveal">
+            <div class="project-item__info">
+              <div class="project-item__tags">
+                <span class="tag">Lens Studio</span>
+              </div>
+              <h3 class="project-item__title">Disney Super Bowl AR — Castle Reveal</h3>
+              <p class="project-item__desc">
+                An AR lens project for the Super Bowl created for Disney — visual effects for the
+                castle reveal buildup and the castle appearance itself. Built in Lens Studio as part
+                of a collaboration between Snapchat and Disney Studios.
+              </p>
+            </div>
+            <div class="project-carousel" data-carousel>
+              <div class="project-carousel__viewport">
+                <div class="project-carousel__track">
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-08-disney-superbowl-ar.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous slide">‹</button>
+              <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next slide">›</button>
+              <div class="project-carousel__dots" role="tablist" aria-label="Project slides"></div>
+            </div>
+          </article>
+
+          <article class="project-item reveal">
+            <div class="project-item__info">
+              <div class="project-item__tags">
+                <span class="tag">Lens Studio</span>
+              </div>
+              <h3 class="project-item__title">London Streets AR/VR Experience</h3>
+              <p class="project-item__desc">
+                A VR demonstration of Snapchat's capabilities and an AR/VR innovation for London
+                streets — smoke for the arriving train and wind-driven sand across the surrounding
+                environment, built in Lens Studio.
+              </p>
+            </div>
+            <div class="project-carousel" data-carousel>
+              <div class="project-carousel__viewport">
+                <div class="project-carousel__track">
+                  <div class="project-carousel__slide">
+                    <img class="media-autoplay-gif" data-autoplay-gif src="assets/images/projects/project-09-west-world-01.gif" alt="London AR experience — train smoke VFX">
+                  </div>
+                  <div class="project-carousel__slide">
+                    <img class="media-autoplay-gif" data-autoplay-gif src="assets/images/projects/project-09-west-world-02.gif" alt="London AR experience — wind-blown sand">
+                  </div>
+                  <div class="project-carousel__slide">
+                    <img class="media-autoplay-gif" data-autoplay-gif src="assets/images/projects/project-09-west-world-03.gif" alt="London AR experience — environment transition">
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous slide">‹</button>
+              <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next slide">›</button>
+              <div class="project-carousel__dots" role="tablist" aria-label="Project slides"></div>
+            </div>
+          </article>
+
+          <article class="project-item project-item--reverse reveal">
+            <div class="project-item__info">
+              <div class="project-item__tags">
+                <span class="tag">Lens Studio</span>
+              </div>
+              <h3 class="project-item__title">Bitmoji Block Battle — Snapchat Games</h3>
+              <p class="project-item__desc">
+                Visual effects for Snapchat mini-games in Lens Studio — character trail FX, damage
+                animations, and animated UI elements and gameplay hints for Block Dash and Bitmoji
+                Block Battle.
+              </p>
+            </div>
+            <div class="project-carousel" data-carousel>
+              <div class="project-carousel__viewport">
+                <div class="project-carousel__track">
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-10-block-dash.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-10-bitmoji-block-battle.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous slide">‹</button>
+              <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next slide">›</button>
+              <div class="project-carousel__dots" role="tablist" aria-label="Project slides"></div>
+            </div>
+          </article>
+
+          <article class="project-item reveal">
+            <div class="project-item__info">
+              <div class="project-item__tags">
+                <span class="tag">Lens Studio</span>
+                <span class="tag">Blender</span>
+                <span class="tag">Photoshop</span>
+                <span class="tag">Texture Packer</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="project-item__title">Coca-Cola Vending Machine — Snapchat VR</h3>
+              <p class="project-item__desc">
+                A VR lens project for a Snapchat Coca-Cola vending machine experience — shout/scream
+                visual FX for the user, plus custom JavaScript logic to detect and measure mouth
+                opening. 3D assets and textures prepared in Blender, Photoshop, and Texture Packer.
+              </p>
+            </div>
+            <div class="project-carousel" data-carousel>
+              <div class="project-carousel__viewport">
+                <div class="project-carousel__track">
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-11-coca-cola-01.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="project-carousel__slide">
+                    <video controls preload="metadata" playsinline>
+                      <source src="assets/videos/projects/project-11-coca-cola-02.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous slide">‹</button>
+              <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next slide">›</button>
+              <div class="project-carousel__dots" role="tablist" aria-label="Project slides"></div>
+            </div>
+          </article>
+
+          <article class="project-item project-item--reverse reveal">
+            <div class="project-item__info">
+              <div class="project-item__tags">
+                <span class="tag">Lens Studio</span>
+                <span class="tag">Blender</span>
+                <span class="tag">After Effects</span>
+                <span class="tag">Photoshop</span>
+              </div>
+              <h3 class="project-item__title">McDonald's McDonaldland — Partner Game</h3>
+              <p class="project-item__desc">
+                A partner game for McDonald's built in Lens Studio — classic 2D VFX workflows using
+                sprites and texture atlases, with 3D assets from Blender and animated elements created
+                in After Effects and Photoshop.
+              </p>
+            </div>
+            <div class="project-carousel" data-carousel>
+              <div class="project-carousel__viewport">
+                <div class="project-carousel__track">
+                  <div class="project-carousel__slide">
+                    <img class="media-autoplay-gif" data-autoplay-gif src="assets/images/projects/project-12-mcdonalds-01.gif" alt="McDonald's game — water slide gameplay">
+                  </div>
+                  <div class="project-carousel__slide">
+                    <img class="media-autoplay-gif" data-autoplay-gif src="assets/images/projects/project-12-mcdonalds-02.gif" alt="McDonald's game — unlock and collect FX">
+                  </div>
+                  <div class="project-carousel__slide">
+                    <img class="media-autoplay-gif" data-autoplay-gif src="assets/images/projects/project-12-mcdonalds-03.gif" alt="McDonald's game — AR water ride">
+                  </div>
+                  <div class="project-carousel__slide">
+                    <img class="media-autoplay-gif" data-autoplay-gif src="assets/images/projects/project-12-mcdonalds-04.gif" alt="McDonald's game — collection gameplay">
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous slide">‹</button>
+              <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next slide">›</button>
+              <div class="project-carousel__dots" role="tablist" aria-label="Project slides"></div>
+            </div>
+          </article>
+
+          <article class="project-item reveal">
+            <div class="project-item__info">
+              <div class="project-item__tags">
+                <span class="tag">GLSL</span>
+                <span class="tag">Lens Studio</span>
+              </div>
+              <h3 class="project-item__title">Anamorphic Flare — Custom GLSL Lens</h3>
+              <p class="project-item__desc">
+                A custom GLSL shader for Snapchat in Lens Studio — generates customizable real-time
+                anamorphic lens flares from bright light sources in the camera feed, with adjustable
+                intensity, color, and streak parameters.
+              </p>
+            </div>
+            <div class="project-carousel" data-carousel>
+              <div class="project-carousel__viewport">
+                <div class="project-carousel__track">
+                  <div class="project-carousel__slide">
+                    <img class="media-autoplay-gif" data-autoplay-gif src="assets/images/projects/project-13-anamorphic-01.gif" alt="Anamorphic flare — headlight effect">
+                  </div>
+                  <div class="project-carousel__slide">
+                    <img class="media-autoplay-gif" data-autoplay-gif src="assets/images/projects/project-13-anamorphic-02.gif" alt="Anamorphic flare — Lens Studio shader setup">
+                  </div>
+                  <div class="project-carousel__slide">
+                    <img class="media-autoplay-gif" data-autoplay-gif src="assets/images/projects/project-13-anamorphic-03.gif" alt="Anamorphic flare — night driving demo">
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous slide">‹</button>
+              <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next slide">›</button>
+              <div class="project-carousel__dots" role="tablist" aria-label="Project slides"></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Showreel -->
+    <section class="section" id="showreel">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Showreel</span>
+          <h2 class="section__title">Latest Reel</h2>
+        </div>
+        <div class="showreel reveal">
+          <!--
+            REPLACE: Add your showreel video file to assets/videos/
+            Supported formats: MP4 (H.264) and WebM for best browser compatibility.
+            Update the src paths below to your actual video filenames.
+          -->
+          <video
+            class="showreel__video"
+            id="showreelVideo"
+            poster="assets/images/showreel-poster.svg"
+            controls
+            preload="metadata"
+            playsinline
+          >
+            <source src="assets/videos/showreel.mp4" type="video/mp4">
+            <source src="assets/videos/showreel.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+          <p class="showreel__note">
+            <!-- REPLACE: Remove this note once you've added your showreel video -->
+            Placeholder: Add <code>showreel.mp4</code> to <code>assets/videos/</code>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Contact</span>
+          <h2 class="section__title">Let's Create Together</h2>
+        </div>
+        <div class="contact reveal">
+          <p class="contact__intro">
+            <!-- REPLACE: Update with your preferred contact message -->
+            Available for freelance projects, collaborations, and full-time opportunities.
+            Reach out — I'd love to hear about your next project.
+          </p>
+          <div class="contact__links">
+            <a href="mailto:cmakovet@gmail.com" class="contact__link">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>cmakovet@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/sergey-makoveckiy-36a712151" class="contact__link" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.72h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.72H5.5v8.72h2.77z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/cmakovet" class="contact__link" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02A9.58 9.58 0 0 1 12 6.8c.85.004 1.71.115 2.51.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Serhii Makovetskyi. All rights reserved.</p>
+      <a href="#hero" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Full-size video lightbox -->
+  <div class="video-lightbox" id="videoLightbox" hidden aria-hidden="true">
+    <div class="video-lightbox__backdrop" data-lightbox-close></div>
+    <button type="button" class="video-lightbox__close" aria-label="Close video" data-lightbox-close>&times;</button>
+    <div class="video-lightbox__content">
+      <video controls playsinline id="videoLightboxPlayer"></video>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

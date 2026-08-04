@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" role="img" aria-label="Marvel">
+  <rect x="8" y="8" width="104" height="24" rx="2" fill="#ed1d24"/>
+  <text x="60" y="26" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="800" letter-spacing="3">MARVEL</text>
+</svg>

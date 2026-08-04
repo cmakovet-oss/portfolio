@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none">
+  <rect width="640" height="400" fill="#14141f"/>
+  <defs><linearGradient id="g4" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#6c5ce7" stop-opacity="0.2"/><stop offset="100%" stop-color="#00cec9" stop-opacity="0.15"/></linearGradient></defs>
+  <rect width="640" height="400" fill="url(#g4)"/>
+  <text x="320" y="190" text-anchor="middle" fill="#a29bfe" font-family="system-ui,sans-serif" font-size="28" font-weight="600">Project 04</text>
+  <text x="320" y="230" text-anchor="middle" fill="#8888a0" font-family="system-ui,sans-serif" font-size="14">REPLACE: project-04.jpg</text>
+</svg>
