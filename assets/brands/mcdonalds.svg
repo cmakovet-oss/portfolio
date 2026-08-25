@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" role="img" aria-label="McDonald's">
-  <path fill="#ffc72c" d="M35 32c0-10 8-18 10-26 2 8 10 16 10 26H35zm20 0c0-10 8-18 10-26 2 8 10 16 10 26H55z"/>
-  <text x="60" y="38" text-anchor="middle" fill="currentColor" font-family="system-ui,sans-serif" font-size="7" font-weight="600" opacity="0.7">McDonald's</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 56" role="img" aria-label="McDonald's">
+  <g transform="translate(80 30) scale(0.58) translate(-61.44 -47)">
+    <path fill="#fff" d="M12.57,73.34l10.29-6.36c2.67,5.76,7.56,9.33,13.12,9.33c7.89,0,12.38-4.58,12.38-13.57V0h12.38v62.74c0,14.89-8.58,22.56-24.21,22.56C23.57,85.3,15.83,80.76,12.57,73.34z"/>
+    <path fill="#fff" d="M61.55,73.34l10.29-6.36c2.67,5.76,7.56,9.33,13.12,9.33c7.89,0,12.38-4.58,12.38-13.57V0h12.38v62.74c0,14.89-8.58,22.56-24.21,22.56C72.55,85.3,64.81,80.76,61.55,73.34z"/>
+  </g>
 </svg>

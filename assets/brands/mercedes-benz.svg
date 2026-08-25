@@ -1,5 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" role="img" aria-label="Mercedes-Benz">
-  <circle cx="60" cy="18" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/>
-  <path fill="currentColor" d="M60 6 L60 18 L48 26 L60 18 L72 26 Z"/>
-  <text x="60" y="38" text-anchor="middle" fill="currentColor" font-family="system-ui,sans-serif" font-size="6" font-weight="600" letter-spacing="1" opacity="0.7">Mercedes-Benz</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 56" role="img" aria-label="Mercedes-Benz">
+  <g transform="translate(80 22) scale(1.05) translate(-80 -22)">
+    <circle cx="80" cy="22" r="16" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <path fill="#fff" d="M80 8v14l-14 8 14-8 14 8z"/>
+  </g>
+  <text x="80" y="50" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="7" font-weight="600" letter-spacing="1" opacity="0.8">Mercedes-Benz</text>
 </svg>

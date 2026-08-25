@@ -1,3 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" role="img" aria-label="Nike">
-  <path fill="currentColor" d="M15 28c18-2 35-12 85-18-28 14-48 22-85 22z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 56" role="img" aria-label="Nike">
+  <g transform="translate(80 30) scale(1.2) translate(-80 -30)">
+    <path fill="#fff" d="M28 36c22-2 42-14 100-20-32 16-56 26-100 26z"/>
+  </g>
 </svg>

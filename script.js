@@ -109,20 +109,6 @@
     });
   }
 
-  /* --- Hide placeholder notes when media is available --- */
-  const showreelVideo = document.getElementById('showreelVideo');
-  const showreelNote = document.querySelector('.showreel__note');
-
-  if (showreelVideo && showreelNote) {
-    showreelVideo.addEventListener('loadeddata', function () {
-      showreelNote.style.display = 'none';
-    });
-
-    showreelVideo.addEventListener('error', function () {
-      showreelNote.style.display = 'block';
-    });
-  }
-
   /* --- Close mobile nav on resize to desktop --- */
   window.addEventListener('resize', function () {
     if (window.innerWidth > 768) {
