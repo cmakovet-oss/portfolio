@@ -336,95 +336,8 @@ code {
 .hero__subtitle {
   font-size: clamp(1rem, 2.5vw, 1.35rem);
   color: var(--color-text-muted);
-  margin-bottom: 0.75rem;
+  margin-bottom: 2.5rem;
   font-weight: 300;
-}
-
-.hero__experience {
-  font-size: 0.95rem;
-  letter-spacing: 0.04em;
-  color: var(--color-accent-secondary);
-  margin-bottom: 1.5rem;
-  font-weight: 500;
-}
-
-.hero__employers {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
-}
-
-.hero-employer {
-  --hero-employer-w: 88px;
-  --hero-employer-h: 52px;
-  --hero-employer-pad: 8px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: var(--hero-employer-w);
-  height: var(--hero-employer-h);
-  padding: var(--hero-employer-pad);
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
-}
-
-.hero-employer:hover {
-  border-color: rgba(108, 92, 231, 0.35);
-  box-shadow: 0 0 20px var(--color-accent-glow);
-  transform: translateY(-2px);
-}
-
-.hero-employer img {
-  display: block;
-  width: calc(var(--hero-employer-w) - var(--hero-employer-pad) * 2);
-  height: calc(var(--hero-employer-h) - var(--hero-employer-pad) * 2);
-  object-fit: contain;
-  object-position: center;
-  opacity: 0.9;
-}
-
-.hero-employer:hover img {
-  opacity: 1;
-}
-
-.hero__contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
-}
-
-.hero-contact__link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--color-border);
-  border-radius: 50%;
-  color: var(--color-text-muted);
-  transition: all var(--transition);
-}
-
-.hero-contact__link svg {
-  width: 1.15rem;
-  height: 1.15rem;
-  fill: currentColor;
-}
-
-.hero-contact__link:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent-light);
-  box-shadow: 0 0 18px var(--color-accent-glow);
-  transform: translateY(-2px);
 }
 
 .hero__actions {
@@ -1190,16 +1103,6 @@ code {
   .hero__actions {
     flex-direction: column;
     align-items: center;
-  }
-
-  .hero__employers {
-    gap: 0.6rem;
-  }
-
-  .hero-employer {
-    --hero-employer-w: 80px;
-    --hero-employer-h: 48px;
-    --hero-employer-pad: 7px;
   }
 
   .footer__inner {
