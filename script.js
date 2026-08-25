@@ -163,21 +163,21 @@
 
     slides.forEach(function (slide, i) {
       var img = slide.querySelector('img');
-      var autoplayVideo = slide.querySelector('video[data-autoplay]');
+      var slideVideo = slide.querySelector('video');
 
       if (img && isAnimatedImage(img)) {
         if (i === activeIndex && inView) playAnimatedImage(img);
         else pauseAnimatedImage(img);
       }
 
-      if (autoplayVideo) {
-        autoplayVideo.muted = true;
-        autoplayVideo.loop = true;
-        autoplayVideo.playsInline = true;
+      if (slideVideo) {
+        slideVideo.muted = true;
+        slideVideo.loop = true;
+        slideVideo.playsInline = true;
         if (i === activeIndex && inView) {
-          autoplayVideo.play().catch(function () {});
+          slideVideo.play().catch(function () {});
         } else {
-          autoplayVideo.pause();
+          slideVideo.pause();
         }
       }
     });
@@ -185,7 +185,7 @@
 
   function pauseAllCarouselAutoplay(carousel) {
     carousel.querySelectorAll('.project-carousel__slide img').forEach(pauseAnimatedImage);
-    carousel.querySelectorAll('video[data-autoplay]').forEach(function (video) {
+    carousel.querySelectorAll('video').forEach(function (video) {
       video.pause();
     });
   }
@@ -207,14 +207,14 @@
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.35, rootMargin: '0px 0px -5% 0px' }
     );
 
     observer.observe(carousel);
   }
 
   function initStandaloneGifAutoplay() {
-    document.querySelectorAll('img[src$=".gif"], img[src$=".GIF"]').forEach(function (img) {
+    document.querySelectorAll('[data-autoplay-gif], img[src$=".gif"], img[src$=".GIF"]').forEach(function (img) {
       if (img.closest('[data-carousel]')) return;
 
       storeAnimatedSrc(img);
@@ -384,7 +384,7 @@
       }
 
       function pauseVideos() {
-        carousel.querySelectorAll('video:not([data-autoplay])').forEach(function (video) {
+        carousel.querySelectorAll('video').forEach(function (video) {
           video.pause();
         });
       }
