@@ -384,8 +384,8 @@ code {
 }
 
 .hero-company--snapchat img {
-  max-height: calc(1.45rem + 2px);
-  max-width: calc(1.45rem + 2px);
+  max-height: calc(1.45rem + 4px);
+  max-width: calc(1.45rem + 4px);
   border-radius: 0.4rem;
 }
 
