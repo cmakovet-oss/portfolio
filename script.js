@@ -126,6 +126,7 @@
   /* --- Project media carousels --- */
   initProjectCarousels();
   initVideoLightbox();
+  initDemoInfoPanel();
 
   var GIF_PLACEHOLDER = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 
@@ -249,6 +250,16 @@
   }
 
   function fitCarouselViewport(carousel, slideIndex) {
+    if (carousel.hasAttribute('data-text-carousel')) {
+      const viewport = carousel.querySelector('.project-carousel__viewport');
+      if (viewport) {
+        viewport.style.height = 'auto';
+        viewport.style.maxWidth = '';
+        viewport.style.marginInline = '';
+      }
+      return;
+    }
+
     const viewport = carousel.querySelector('.project-carousel__viewport');
     const slides = carousel.querySelectorAll('.project-carousel__slide');
     const slide = slides[slideIndex];
@@ -462,5 +473,22 @@
     });
 
     initStandaloneGifAutoplay();
+  }
+
+  function initDemoInfoPanel() {
+    const toggle = document.getElementById('demoAboutToggle');
+    const panel = document.getElementById('demoAboutPanel');
+    if (!toggle || !panel) return;
+
+    function setOpen(open) {
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      panel.setAttribute('aria-hidden', open ? 'false' : 'true');
+      panel.classList.toggle('is-open', open);
+      toggle.textContent = open ? 'Hide Description' : 'About This Demo';
+    }
+
+    toggle.addEventListener('click', function () {
+      setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+    });
   }
 })();

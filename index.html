@@ -158,6 +158,41 @@
               allow="autoplay; fullscreen"
             ></iframe>
           </div>
+
+          <div class="demo__about">
+            <button
+              type="button"
+              class="btn btn--ghost demo__about-btn"
+              id="demoAboutToggle"
+              aria-expanded="false"
+              aria-controls="demoAboutPanel"
+            >
+              About This Demo
+            </button>
+
+            <div class="demo-info" id="demoAboutPanel" aria-hidden="true">
+              <div class="demo-info__panel">
+                <div class="project-carousel demo-info__carousel" data-carousel data-text-carousel aria-label="Demo description slides">
+                  <div class="project-carousel__viewport">
+                    <div class="project-carousel__track">
+                      <div class="project-carousel__slide demo-info__slide">
+                        <span class="demo-info__label">Overview</span>
+                        <h3 class="demo-info__title">Beyond Visual Effects</h3>
+                        <p class="demo-info__text">
+                          I included this interactive demo to show that my skills extend beyond visual
+                          effects alone. The entire demonstration scene was designed and built by me in
+                          Unity, applying my knowledge of shaders, particles, 3D, animation, and much more.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous slide">‹</button>
+                  <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next slide">›</button>
+                  <div class="project-carousel__dots" role="tablist" aria-label="Demo description slides"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
