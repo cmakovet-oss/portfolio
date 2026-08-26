@@ -425,7 +425,11 @@
           const dot = document.createElement('button');
           dot.type = 'button';
           dot.className = 'project-carousel__dot' + (i === 0 ? ' active' : '');
-          dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+          const label = slides[i].dataset.slideLabel || ('Slide ' + (i + 1));
+          dot.setAttribute('aria-label', label);
+          if (slides[i].dataset.slideLabel) {
+            dot.setAttribute('title', slides[i].dataset.slideLabel);
+          }
           dot.addEventListener('click', function () {
             goTo(i);
           });
