@@ -1133,6 +1133,14 @@ code {
   object-fit: contain;
 }
 
+.demo-info__media-carousel .project-carousel__slide img {
+  width: 100%;
+  height: 100%;
+  max-height: min(45vh, 420px);
+  object-fit: contain;
+  background: #0a0a0f;
+}
+
 .demo-info__media-carousel .project-carousel__btn {
   width: 2rem;
   height: 2rem;

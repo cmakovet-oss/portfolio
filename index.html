@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=13">
+  <link rel="stylesheet" href="style.css?v=14">
 </head>
 <body>
 
@@ -152,7 +152,7 @@
           <div class="demo__frame-wrapper demo__frame-wrapper--unity">
             <iframe
               class="demo__frame"
-              src="game/index.html?v=13"
+              src="game/index.html?v=14"
               title="DEMO Game — Unity WebGL"
               loading="lazy"
               allow="autoplay; fullscreen"
@@ -214,6 +214,48 @@
                             <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous video">‹</button>
                             <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next video">›</button>
                             <div class="project-carousel__dots" role="tablist" aria-label="Environment videos"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-carousel__slide demo-info__slide demo-info__slide--split">
+                        <div class="demo-info__content">
+                          <span class="demo-info__label">VFX &amp; Shaders</span>
+                          <h3 class="demo-info__title">Procedural Effects Pipeline</h3>
+                          <p class="demo-info__text">
+                            The project includes around 20–30 different shaders and effects. Attack
+                            visual effects were built using particles, custom shaders, and particle shapes
+                            that are closely integrated with the shader pipeline. Water and waterfalls are
+                            implemented entirely in Shader Graph, with fully procedural animation. Tree sway
+                            animation is procedural as well.
+                          </p>
+                        </div>
+                        <div class="demo-info__media">
+                          <div class="project-carousel demo-info__media-carousel" data-carousel data-demo-media-carousel aria-label="VFX and shaders preview media">
+                            <div class="project-carousel__viewport">
+                              <div class="project-carousel__track">
+                                <div class="project-carousel__slide">
+                                  <video muted loop playsinline preload="metadata" aria-label="VFX preview — attack effects">
+                                    <source src="assets/videos/demo/vfx-01.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                                <div class="project-carousel__slide">
+                                  <img src="assets/images/demo/vfx-shader-graph.png" alt="Unity Shader Graph — FireBall shader node setup">
+                                </div>
+                                <div class="project-carousel__slide">
+                                  <video muted loop playsinline preload="metadata" aria-label="VFX preview — water and waterfalls">
+                                    <source src="assets/videos/demo/vfx-02.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                                <div class="project-carousel__slide">
+                                  <video muted loop playsinline preload="metadata" aria-label="VFX preview — procedural tree animation">
+                                    <source src="assets/videos/demo/vfx-03.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                              </div>
+                            </div>
+                            <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous media">‹</button>
+                            <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next media">›</button>
+                            <div class="project-carousel__dots" role="tablist" aria-label="VFX and shaders media"></div>
                           </div>
                         </div>
                       </div>
@@ -852,6 +894,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=13"></script>
+  <script src="script.js?v=14"></script>
 </body>
 </html>
