@@ -405,12 +405,12 @@
 
   function initProjectCarousels() {
     document.querySelectorAll('[data-carousel]').forEach(function (carousel) {
-      const viewport = carousel.querySelector('.project-carousel__viewport');
-      const track = carousel.querySelector('.project-carousel__track');
+      const viewport = carousel.querySelector(':scope > .project-carousel__viewport');
+      const track = viewport ? viewport.querySelector(':scope > .project-carousel__track') : null;
       const slides = track ? track.querySelectorAll(':scope > .project-carousel__slide') : [];
-      const prevBtn = carousel.querySelector('.project-carousel__btn--prev');
-      const nextBtn = carousel.querySelector('.project-carousel__btn--next');
-      const dotsContainer = carousel.querySelector('.project-carousel__dots');
+      const prevBtn = carousel.querySelector(':scope > .project-carousel__btn--prev');
+      const nextBtn = carousel.querySelector(':scope > .project-carousel__btn--next');
+      const dotsContainer = carousel.querySelector(':scope > .project-carousel__dots');
       let index = 0;
       let touchStartX = 0;
 

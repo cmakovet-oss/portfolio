@@ -1066,6 +1066,16 @@ code {
   max-width: none !important;
   margin-inline: 0 !important;
   background: transparent;
+  overflow: hidden;
+}
+
+.demo-info__carousel > .project-carousel__btn {
+  z-index: 5;
+}
+
+.demo-info__carousel > .project-carousel__dots {
+  position: relative;
+  z-index: 5;
 }
 
 .demo-info__slide {
