@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
 
@@ -152,7 +152,7 @@
           <div class="demo__frame-wrapper demo__frame-wrapper--unity">
             <iframe
               class="demo__frame"
-              src="game/index.html?v=11"
+              src="game/index.html?v=12"
               title="DEMO Game — Unity WebGL"
               loading="lazy"
               allow="autoplay; fullscreen"
@@ -183,6 +183,39 @@
                           effects alone. The entire demonstration scene was designed and built by me in
                           Unity, applying my knowledge of shaders, particles, 3D, animation, and much more.
                         </p>
+                      </div>
+                      <div class="project-carousel__slide demo-info__slide demo-info__slide--split">
+                        <div class="demo-info__content">
+                          <span class="demo-info__label">Environment</span>
+                          <h3 class="demo-info__title">Terrain &amp; World Building</h3>
+                          <p class="demo-info__text">
+                            The environment was built with Unity Terrain, while the main environment
+                            elements were created in Blender. Waterfalls, water, trees, grass, rocks,
+                            and the background mountains — all of these assets were exported from Blender
+                            and integrated into the scene.
+                          </p>
+                        </div>
+                        <div class="demo-info__media">
+                          <div class="project-carousel demo-info__media-carousel" data-carousel data-demo-media-carousel aria-label="Environment preview videos">
+                            <div class="project-carousel__viewport">
+                              <div class="project-carousel__track">
+                                <div class="project-carousel__slide">
+                                  <video muted loop playsinline preload="metadata" aria-label="Environment preview — terrain and foliage">
+                                    <source src="assets/videos/demo/environment-01.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                                <div class="project-carousel__slide">
+                                  <video muted loop playsinline preload="metadata" aria-label="Environment preview — waterfalls and mountains">
+                                    <source src="assets/videos/demo/environment-02.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                              </div>
+                            </div>
+                            <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous video">‹</button>
+                            <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next video">›</button>
+                            <div class="project-carousel__dots" role="tablist" aria-label="Environment videos"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -819,6 +852,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=11"></script>
+  <script src="script.js?v=12"></script>
 </body>
 </html>

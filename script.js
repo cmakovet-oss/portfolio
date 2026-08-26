@@ -159,7 +159,8 @@
   }
 
   function syncCarouselAutoplay(carousel, activeIndex) {
-    var slides = carousel.querySelectorAll('.project-carousel__slide');
+    var track = carousel.querySelector('.project-carousel__track');
+    var slides = track ? track.querySelectorAll(':scope > .project-carousel__slide') : [];
     var inView = isCarouselInView(carousel);
 
     slides.forEach(function (slide, i) {
@@ -214,6 +215,40 @@
     observer.observe(carousel);
   }
 
+  function syncDemoInfoMedia() {
+    const panel = document.getElementById('demoAboutPanel');
+    if (!panel) return;
+
+    panel.querySelectorAll('video').forEach(function (video) {
+      video.pause();
+    });
+
+    if (!panel.classList.contains('is-open')) return;
+
+    const mainCarousel = panel.querySelector('.demo-info__carousel');
+    if (!mainCarousel) return;
+
+    const mainSlides = mainCarousel.querySelectorAll(':scope > .project-carousel__viewport > .project-carousel__track > .project-carousel__slide');
+    const mainIdx = parseInt(mainCarousel.dataset.activeIndex || '0', 10);
+    const activeMainSlide = mainSlides[mainIdx];
+    if (!activeMainSlide) return;
+
+    const mediaCarousel = activeMainSlide.querySelector('[data-demo-media-carousel]');
+    if (!mediaCarousel) return;
+
+    const mediaSlides = mediaCarousel.querySelector('.project-carousel__track')?.querySelectorAll(':scope > .project-carousel__slide') || [];
+    const mediaIdx = parseInt(mediaCarousel.dataset.activeIndex || '0', 10);
+    const activeMediaSlide = mediaSlides[mediaIdx];
+    const video = activeMediaSlide ? activeMediaSlide.querySelector('video') : null;
+
+    if (!video) return;
+
+    video.muted = true;
+    video.loop = true;
+    video.playsInline = true;
+    video.play().catch(function () {});
+  }
+
   function initStandaloneGifAutoplay() {
     document.querySelectorAll('[data-autoplay-gif], img[src$=".gif"], img[src$=".GIF"]').forEach(function (img) {
       if (img.closest('[data-carousel]')) return;
@@ -261,13 +296,17 @@
     }
 
     const viewport = carousel.querySelector('.project-carousel__viewport');
-    const slides = carousel.querySelectorAll('.project-carousel__slide');
+    const track = carousel.querySelector('.project-carousel__track');
+    const slides = track ? track.querySelectorAll(':scope > .project-carousel__slide') : [];
     const slide = slides[slideIndex];
     if (!viewport || !slide) return;
 
     const media = slide.querySelector('video, img');
     const size = media ? getMediaSize(media) : null;
-    const maxHeight = Math.min(window.innerHeight * 0.75, 680);
+    const isDemoMedia = carousel.hasAttribute('data-demo-media-carousel');
+    const maxHeight = isDemoMedia
+      ? Math.min(window.innerHeight * 0.45, 420)
+      : Math.min(window.innerHeight * 0.75, 680);
     const containerWidth = viewport.parentElement
       ? viewport.parentElement.clientWidth
       : viewport.clientWidth;
@@ -368,7 +407,7 @@
     document.querySelectorAll('[data-carousel]').forEach(function (carousel) {
       const viewport = carousel.querySelector('.project-carousel__viewport');
       const track = carousel.querySelector('.project-carousel__track');
-      const slides = carousel.querySelectorAll('.project-carousel__slide');
+      const slides = track ? track.querySelectorAll(':scope > .project-carousel__slide') : [];
       const prevBtn = carousel.querySelector('.project-carousel__btn--prev');
       const nextBtn = carousel.querySelector('.project-carousel__btn--next');
       const dotsContainer = carousel.querySelector('.project-carousel__dots');
@@ -410,6 +449,9 @@
         }
         fitCarouselViewport(carousel, index);
         syncCarouselAutoplay(carousel, index);
+        if (carousel.closest('.demo-info') || carousel.hasAttribute('data-demo-media-carousel')) {
+          syncDemoInfoMedia();
+        }
       }
 
       function goTo(i) {
@@ -485,6 +527,16 @@
       panel.setAttribute('aria-hidden', open ? 'false' : 'true');
       panel.classList.toggle('is-open', open);
       toggle.textContent = open ? 'Hide Description' : 'About This Demo';
+
+      if (open) {
+        window.requestAnimationFrame(function () {
+          syncDemoInfoMedia();
+        });
+      } else {
+        panel.querySelectorAll('video').forEach(function (video) {
+          video.pause();
+        });
+      }
     }
 
     toggle.addEventListener('click', function () {
