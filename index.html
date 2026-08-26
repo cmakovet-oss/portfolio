@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=14">
+  <link rel="stylesheet" href="style.css?v=15">
 </head>
 <body>
 
@@ -152,7 +152,7 @@
           <div class="demo__frame-wrapper demo__frame-wrapper--unity">
             <iframe
               class="demo__frame"
-              src="game/index.html?v=14"
+              src="game/index.html?v=15"
               title="DEMO Game — Unity WebGL"
               loading="lazy"
               allow="autoplay; fullscreen"
@@ -256,6 +256,39 @@
                             <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous media">‹</button>
                             <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next media">›</button>
                             <div class="project-carousel__dots" role="tablist" aria-label="VFX and shaders media"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="project-carousel__slide demo-info__slide demo-info__slide--split">
+                        <div class="demo-info__content">
+                          <span class="demo-info__label">Animation</span>
+                          <h3 class="demo-info__title">Character &amp; Enemy Motion</h3>
+                          <p class="demo-info__text">
+                            The main character animation was sourced from Mixamo and combined in Unity.
+                            Simple enemy animations were created in Blender and also consist of several
+                            states. In total, the project includes up to 20 character and enemy
+                            animations.
+                          </p>
+                        </div>
+                        <div class="demo-info__media">
+                          <div class="project-carousel demo-info__media-carousel" data-carousel data-demo-media-carousel aria-label="Animation preview videos">
+                            <div class="project-carousel__viewport">
+                              <div class="project-carousel__track">
+                                <div class="project-carousel__slide">
+                                  <video muted loop playsinline preload="metadata" aria-label="Animation preview — character motion">
+                                    <source src="assets/videos/demo/animation-01.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                                <div class="project-carousel__slide">
+                                  <video muted loop playsinline preload="metadata" aria-label="Animation preview — enemy states">
+                                    <source src="assets/videos/demo/animation-02.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                              </div>
+                            </div>
+                            <button type="button" class="project-carousel__btn project-carousel__btn--prev" aria-label="Previous video">‹</button>
+                            <button type="button" class="project-carousel__btn project-carousel__btn--next" aria-label="Next video">›</button>
+                            <div class="project-carousel__dots" role="tablist" aria-label="Animation videos"></div>
                           </div>
                         </div>
                       </div>
@@ -894,6 +927,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=14"></script>
+  <script src="script.js?v=15"></script>
 </body>
 </html>
