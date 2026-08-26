@@ -55,7 +55,7 @@
       var loaderUrl = buildUrl + "/c408dc88c873c6012dc0eb1332f7aa01.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/e587bcb7863a212edb43fe619c9a6aa6.data.unityweb",
+        dataUrl: buildUrl + "/d7ead9bdfad76758d4fff57370ffe052.data.unityweb",
         frameworkUrl: buildUrl + "/d4b938b6bdc23917215f5efe0d767b91.framework.js.unityweb",
         codeUrl: buildUrl + "/4a33b211e77c778f8717e229b071a930.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
@@ -87,7 +87,13 @@
       // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
       // expected to change.
 
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      var isEmbedded = window.self !== window.top;
+
+      if (isEmbedded) {
+        document.documentElement.classList.add("unity-embed");
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
+      } else if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
 
         var meta = document.createElement('meta');
